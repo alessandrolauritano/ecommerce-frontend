@@ -4,8 +4,9 @@ import { useShoppingCart } from "../ context/ShoppingCartContext"
 
 
 export function Navbar() {
-    
-    return (
+    const { cartQuantity } = useShoppingCart();
+
+    return ( 
         <NavbarBs sticky="top" className="bg-white shadow-sm mb-3">
             <Container>
                 <Nav className ="me-auto" >
@@ -23,7 +24,7 @@ export function Navbar() {
                      bottom: 0,
                      right: 0,
                      transform: "translate(50%, 20%)"
-                     }}>2</div>
+                     }}>{ cartQuantity }</div>
               </Button>
             </Container>
         </NavbarBs>
