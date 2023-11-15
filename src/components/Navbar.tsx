@@ -20,13 +20,13 @@ export function Navbar(){
             className="p-0" 
             variant="outline-dark">    
             <AiOutlineShoppingCart className="" style={{}} size={30}/>            
-            <div className="bg-black rounded-circle d-flex align-items-center justify-content-center" 
+            {cartQuantity > 0 ? (<div className="bg-black rounded-circle d-flex align-items-center justify-content-center" 
             style=
             {{position: "absolute", 
                 width: "1.5rem", 
                 height:"1.5rem", 
                 color:"white", 
-                transform:"translate(-30%, -25%)"}}>{cartQuantity}</div>
+                transform:"translate(-30%, -25%)"}}>{cartQuantity}</div>) : null}
             </Button> 
             </Container>
         <SideCart></SideCart>
