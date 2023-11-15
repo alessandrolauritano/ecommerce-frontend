@@ -6,7 +6,11 @@ type ShoppingCartContex={       //This is the structure of the context
     increaseItemQuantity: (id: number) => void,
     decreaseItemQuantity: (id: number) => void,
     removeFromCart: (id: number) => void,
-    cartQuantity: number
+    cartQuantity: number,
+    openCart: () => void,
+    closeCart: () => void,
+    cartItems: CartItem[],
+    isOpen: boolean
 }
 
 const ShoppingCartContext = createContext({} as  ShoppingCartContex) // empty object
