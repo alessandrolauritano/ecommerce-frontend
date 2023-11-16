@@ -19,5 +19,5 @@ $ npm run dev
 
 - [x] Implementing the logic for the single product buttons ("+" and "-")
 - [x] Implement the total quantity for the cart
-- [ ] Create a dedicated section for the cart (Sidebar)
+- [x] Create a dedicated section for the cart (Sidebar)
 - [ ] Create a dedicated "Checkout" section
